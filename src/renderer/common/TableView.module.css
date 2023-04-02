@@ -1,0 +1,25 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table tr {
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.table tr:hover {
+  background-color: var(--dark);
+}
+
+.table tr:hover td:first-of-type {
+  border-radius: 5px 0 0 5px;
+}
+
+.table tr:hover td:last-of-type {
+  border-radius: 0 5px 5px 0;
+}
+
+.table td {
+  padding: 15px;
+}

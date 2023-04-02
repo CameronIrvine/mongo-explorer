@@ -1,0 +1,44 @@
+.clusterList {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.clusterList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 30px);
+  font-size: 16px;
+  padding: 15px;
+  border-bottom: var(--green) solid thin;
+  cursor: pointer;
+}
+
+.clusterList li:last-of-type {
+  border-bottom: none;
+}
+
+.clusterList li:hover {
+  background-color: var(--green);
+}
+
+.clusterList li:hover .deleteBtn {
+  opacity: 1;
+}
+
+.deleteBtn {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  padding: 5px;
+  color: inherit;
+  background: none;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.deleteBtn:hover {
+  background-color: #121213;
+}

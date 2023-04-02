@@ -1,0 +1,77 @@
+.collectionObject {
+  margin: 20px 0;
+  padding: 20px;
+  font-family: monospace;
+  background-color: #14161c;
+  border-radius: 10px;
+  overflow-y: auto;
+}
+
+.collectionObject:first-of-type {
+  margin-top: 0;
+}
+
+.collectionObject:last-of-type {
+  margin-bottom: 0;
+}
+
+.collectionObject .collectionObject {
+  padding: 5px 10px;
+}
+
+.row {
+  display: flex;
+}
+
+.col:first-of-type {
+  margin-right: 15px;
+  font-weight: 600;
+  color: white;
+}
+
+.col:first-of-type::after {
+  content: ":"
+}
+
+.col:last-of-type {
+  flex: 1;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.objectIdValue::before {
+  content: "ObjectId(\"";
+  color: var(--green);
+}
+
+.objectIdValue::after {
+  content: "\")";
+  color: var(--green);
+}
+
+.stringValue::before {
+  content: "\"";
+}
+
+.stringValue::after {
+  content: "\"";
+}
+
+.col:last-of-type::-webkit-scrollbar {
+  display: none;
+}
+
+.collapseButton {
+  padding: 0;
+  font-family: inherit;
+  text-align: left;
+  color: var(--green);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.collapseButton span {
+  display: inline-block;
+  margin-right: 1rem;
+}

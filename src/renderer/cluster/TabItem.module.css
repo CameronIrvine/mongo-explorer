@@ -1,0 +1,27 @@
+.tab {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  user-select: none;
+  border-bottom: transparent solid 2px;
+  white-space: nowrap;
+  opacity: 0.5;
+}
+
+.selected {
+  border-color: var(--green);
+  background-color: var(--darkest);
+  cursor: default;
+  opacity: 1;
+}
+
+.closeBtn {
+  margin-left: 10px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
